@@ -1043,19 +1043,6 @@ SMALL SCREEN CHANGES
         grid-template-columns: 1fr;
         gap: 32px;
     }
-
-    .about-visual {
-        position: static;
-        height: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 16px;
-    }
-    .about-card {
-        position: static;
-        width: 100% !important;
-        transform: none !important;
-    }
     
     /* Event Image Carousel */
     .carousel-container {
