@@ -317,6 +317,16 @@
         });
     });
 
+    // About card tap-to-front (mobile)
+    const aboutCards = document.querySelectorAll('.about-card');
+    aboutCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const alreadyActive = card.classList.contains('card-active');
+            aboutCards.forEach(c => c.classList.remove('card-active'));
+            if (!alreadyActive) card.classList.add('card-active');
+        });
+    });
+
     // Carousel functionality
     const galleryItems = document.querySelectorAll('.gallery-item');
     const prevButton = document.querySelector('.carousel-prev');
